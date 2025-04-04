@@ -4,5 +4,5 @@ export class Veiculo{
     potencia: number = 0;
     numeroMarchas: number = 5;
     marchaAtual: number = 0;
-    velocidade: number = 0;
+    velocidade: number = 10;
 }
