@@ -33,7 +33,7 @@ console.table(carro);
 
 function acelerar(veiculo: Veiculo): void{
     if(veiculo.marchaAtual != 0){
-    veiculo.velocidade += veiculo.potencia*0.1;
+    veiculo.velocidade += veiculo.potencia*0.2;
     console.log(veiculo.velocidade);
 }}
 
