@@ -68,6 +68,10 @@ function subirMarcha(veiculo: Veiculo): void{
     }
 }
 
+function acionarTurbo(veiculo: Veiculo): void {
+	veiculo.velocidade += 30;
+}
+
 function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
     veiculo.marca = teclado('Marca: ');
