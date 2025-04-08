@@ -32,6 +32,10 @@ while(true){
             subirMarcha(carro);
             break;
 
+        case 4:
+            descerMarcha(carro);
+            break;
+
         default:
             break;
     }
@@ -63,6 +67,19 @@ function subirMarcha(veiculo: Veiculo): void{
     }
     if (veiculo.marchaAtual < veiculo.numeroMarchas) {
         veiculo.marchaAtual++;
+        console.log(veiculo.marchaAtual);
+        return;
+    }
+}
+
+function descerMarcha(veiculo: Veiculo): void{
+    if (veiculo.marchaAtual === 1) {
+        veiculo.marchaAtual = 0;
+        console.log(veiculo.marchaAtual);
+        return;
+    }
+    if (veiculo.marchaAtual > 1) {
+        veiculo.marchaAtual--;
         console.log(veiculo.marchaAtual);
         return;
     }

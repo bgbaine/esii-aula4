@@ -4,7 +4,7 @@
 4. [x] Acelerar
 5. [x] Frear 
 6. [x] Subir marcha
-7. [ ] Reduzir marcha
+7. [x] Reduzir marcha
 8. [ ] Acionar freio de mao
 9. [ ] Ligar o desembacador
 
