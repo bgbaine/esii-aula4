@@ -13,6 +13,9 @@ while(true){
     console.log("3 - Subir marcha");
     console.log("4 - Descer marcha");
     console.log("5 - Imprimir dados do veículo");
+    console.log("6 - Acelerar com turbo");
+    console.log("7 - Freio de mão");
+    console.log("8 - Ligar desembaçador");
     console.log("0 - Sair");
 
     const opcao = +teclado('Escolha uma opção: ');
@@ -23,17 +26,26 @@ while(true){
         case 1:
             acelerar(carro);
             break;
-
         case 2:
             frear(carro);
             break;
-
         case 3:
             subirMarcha(carro);
             break;
-
         case 4:
             descerMarcha(carro);
+            break;
+        case 5:
+            console.table(carro);  
+            break;
+        case 6:
+            acionarTurbo(carro);
+            break;
+        case 7:
+            acionarFreiodemao(carro);
+            break;
+        case 8:
+            desembacarVidros(carro);
             break;
 
         default:
@@ -100,6 +112,9 @@ function criaVeiculo(): Veiculo{
     veiculo.potencia = +teclado('Potência: ');
     veiculo.numeroMarchas = +teclado('Número de marchas: ');
     return veiculo;
+}
+function desembacarVidros(veiculo: Veiculo): void {
+    console.log('Desembaçador ligado!');
 }
 
 
