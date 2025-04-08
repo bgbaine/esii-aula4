@@ -23,15 +23,13 @@ while(true){
         case 1:
             acelerar(carro);
             break;
-
         case 2:
             frear(carro);
             break;
-
         case 3:
             subirMarcha(carro);
             break;
-
+    
         default:
             break;
     }
@@ -66,14 +64,6 @@ function subirMarcha(veiculo: Veiculo): void{
         console.log(veiculo.marchaAtual);
         return;
     }
-}
-
-function acionarTurbo(veiculo: Veiculo): void {
-	veiculo.velocidade += 30;
-}
-
-function acionarFreiodemao(veiculo: Veiculo): void {
-    veiculo.velocidade = 0;
 }
 
 function criaVeiculo(): Veiculo{
