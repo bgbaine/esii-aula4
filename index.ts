@@ -72,6 +72,10 @@ function acionarTurbo(veiculo: Veiculo): void {
 	veiculo.velocidade += 30;
 }
 
+function acionarFreiodemao(veiculo: Veiculo): void {
+    veiculo.velocidade = 0;
+}
+
 function criaVeiculo(): Veiculo{
     const veiculo: Veiculo = new Veiculo();
     veiculo.marca = teclado('Marca: ');
